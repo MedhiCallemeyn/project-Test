@@ -1,0 +1,25 @@
+footer{
+  .hobbies{
+    display: flex;
+    height: 10vh;
+    text-align: center;
+    background: black;
+    color: whitesmoke;
+    p{
+      margin: auto;
+      text-align: center;
+    }
+  }
+  .contacts{
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    i{
+      font-size: 4rem;
+      color:whitesmoke;
+      padding: 20px;
+    }
+  }
+  
+}

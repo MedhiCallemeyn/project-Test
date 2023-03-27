@@ -1,0 +1,42 @@
+header{
+  background: url(/assets/img/fondHeader.jpg) center/cover;
+  min-height: 100vh;
+  nav {
+    display: grid;
+    grid-template-columns: 60% 30%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    background: black;
+    height: 100px;
+    top: -100px;
+    transition: 0.3s;
+    z-index: 1;
+    ul{
+      display: flex;
+      justify-content: space-around;
+      a{
+        color:whitesmoke;
+      }
+    }
+  }
+  #title{
+    width: 60%;
+    margin: 0 auto;
+    padding:5rem;
+    color:whitesmoke;
+    text-align: center;
+    transform: translateY(-600px);
+    filter:blur(1.2rem);
+    transition: 3s ease;
+    font-weight: bold;
+    h1{
+      font-size: 4rem;
+      margin-bottom: 10px;
+    }
+    h2{
+      font-size: 2.3rem;
+    }
+  }
+}

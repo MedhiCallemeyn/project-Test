@@ -1,0 +1,150 @@
+main{
+  margin: 20px;
+#mySelf{
+  margin: 0 auto;
+  padding: 30px;
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter:blur(1.2rem);
+  transition: 1s ease-in;
+  .imgContainer{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    margin: 50px 30px 0 0;
+    overflow:hidden;
+    border:6px solid #fff;
+    img{
+      height: 100%;
+      width: 100%;
+      border-radius: 50%;
+      filter:grayscale(100%);
+      transition: 1s ease-in;
+  }
+  }
+  .imgContainer img:hover{
+    transform: scale(1.1);
+    filter:grayscale(0%);
+  }
+  div{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2{
+      margin-bottom:40px;
+      letter-spacing: 1px;
+    }
+    p{
+      text-align: justify;
+      font-size: 1.2rem;
+      word-spacing: 4px;
+    }
+  }
+}
+
+.career{
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px;
+  #first,#second,#third,#four{
+    opacity: 0;
+    transform: translateX(-200px);
+    transition: 1s ease-in;
+  }
+  #firstBis,#secondBis,#thirdBis,#fourBis{
+    opacity: 0;
+    transition: 1s ease-in;    
+  }
+  h2{
+    text-align: center;
+    padding: 10px;
+  }
+  .careerArticle{
+display: grid;
+grid-template-columns: 30% 70%;
+align-items: center;
+justify-items: center;
+padding: 10px;;
+  }
+  h4{
+    padding: 15px;
+  }
+  p{
+    text-align: justify;
+    font-size: 1.2rem;
+    word-spacing: 4px;
+  }
+}
+.buttonSection{
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  button{
+    background: none;
+    outline: none;
+    border: 1px solid black;
+    color: black;
+    text-transform: uppercase;
+    transition: 0.4s ease;
+    cursor:pointer;
+    padding: 20px;
+    font-size: 1.2rem;
+    box-shadow: 0px 2px 9px 0 black;
+  }
+  button:hover{
+    color:whitesmoke;
+    background: black;
+  } 
+} 
+.popup{
+  width: 800px;
+  background: #fff;
+  border: solid 1px black;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform:translate(-50%,-50%) scale(0.1);
+  padding:50px;
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+    h2{
+      text-align: center;
+    }
+    .grid{
+      display: grid;
+      grid-template-columns: 50% 50%;
+      justify-items: center;
+      padding: 20px;
+      .skillContainer{
+        padding: 15px;
+        li{
+          font-size: 1.5rem;
+        }
+        .fa-star {
+          color: gray;
+          cursor: none;
+          padding: 0.0625rem;
+        }
+        .fa-star.gold {
+          color: #ffdc0f;
+        }
+      }
+    }
+    button{
+      display: block;
+      margin: 0 auto;
+    }
+}
+.open-popup{
+  visibility: visible;
+  transform:translate(-50%,-50%) scale(1);
+  top: -150%;
+}
+}
